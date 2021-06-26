@@ -1,1 +1,78 @@
 I'm not exatly sure what to put in this repo right now. I'm just creating it at 8:15 to show that I started working with the prompts on time.
+
+These are the solutions that I came up with durring the day;
+
+prompt 1 w/o recurrsion
+turning strings into URL
+input "oh Yeah"
+output "oh%20yeah"
+
+ function toURL(inputString) {
+  let outString = "";
+  for (let i=0; i<inputString.length; i++){
+    if (string[i] != " ") {
+      outString =outString.concat(string[i]);
+    } else {
+      outString = outString.concat("%20");
+    }
+    console.log("my out String: " + outString);
+    return outString;
+  }
+  toURL("hey there");
+
+  prompt2 w/o recurrsion
+  Array Deduping
+   function twinsAreGross(array) {
+     let ouputArray =[]
+     for (let i= 0, i<array.length,i++){
+       for (let j= i-1, j=0 , j--){
+         if (j != i) {
+           outputArray.push(i); //this is not right because it will push everytime the indexs don't match instead of if none of the indexes don't match. I gotta come back to this. I'm thinking slice()
+         }
+       }
+     }
+      return outputArray;
+   }
+
+prompt 3
+Compressing strings
+ input "aaabCCdddda"
+ output "3ab2c4da"
+ function compression(string) {
+   let outputString = "";
+   console.log(" original string:" + outputString);
+   let counter = 1;
+   for (let i=0; i< string.length; i++){
+     if (string[i] != string[i+1] && counter <= 1){
+       outputString =outputString.concat(string[i]);
+      console.log("looped string:" + outputString);
+     } else if(string[i] != string[i+1] && counter> 1){
+        outputString = outputString.concat.toString(counter);
+        outputString = outputString.concat(string[i]);
+        counter =1;
+      } else {
+        counter += 1;
+        console.log("other looped string:" + outputString + "  counter: " +counter);
+     }
+   }
+  console.log("final string:" + outputString);
+  return outputString;
+ }
+compression("aaabCCdddda");
+
+prompt 4
+Checking for uniquiness
+input "hello"
+return false
+input "ohDamn"
+return true
+function amIOriginal(string){
+  for(let i=0; i<string.length:){
+    for (let j=i+1, j<string)
+  }
+}
+
+function michael(){
+  let whiteBoarding = "hell no!";
+  return "to the bar";
+}

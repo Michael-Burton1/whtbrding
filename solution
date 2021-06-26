@@ -1,0 +1,23 @@
+array dedupeing
+input [] can be ints string
+I need to take out any duplicate things in array
+cannot use filter()
+This is the prompt I was given for my actual whiteboarding session 
+
+input =[1,5,7,"t", 1,"u","t"]
+expected output = [1,5,7,"t", "u"]
+need to loop through array
+nested loop to check against index of array
+
+function twinsAreGross(inputArray) {
+  for(let i=0; i<inputArray.length: i++){
+    for(let j=i+1; j<inputArray.length; j++){
+      if(inputArray[j] === inputArray[i]){
+        inputArray= inputArray.splice(beforej,afterj);  //pseudocode with splice() I would nee to google how to set the starting and stopping points for this method.
+      } 
+       
+    }
+    return inputArray;
+  }
+
+}
